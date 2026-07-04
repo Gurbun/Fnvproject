@@ -1,0 +1,268 @@
+:root {
+    --fnv-blue: #005baa;
+    --fnv-dark-blue: #003b70;
+    --fnv-green: #76b82a;
+    --fnv-light: #f4f8fb;
+}
+
+body {
+    font-family: Calibri, Arial, sans-serif;
+    background-color: var(--fnv-light);
+    color: #1d1d1d;
+}
+
+/* NAVBAR */
+.fnv-navbar {
+    background-color: var(--fnv-blue);
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.site-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+.language-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.language-link:hover {
+    text-decoration: underline;
+}
+
+/* OLD HERO FALLBACK */
+.hero {
+    background: linear-gradient(rgba(0, 91, 170, 0.88), rgba(0, 91, 170, 0.88));
+    color: white;
+    padding: 90px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+}
+
+/* MODERN HOMEPAGE HERO */
+.modern-hero {
+    min-height: 620px;
+    background-color: #005baa;
+    position: relative;
+}
+
+.hero-overlay {
+    min-height: 620px;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 59, 112, 0.94) 0%,
+        rgba(0, 91, 170, 0.78) 55%,
+        rgba(0, 91, 170, 0.28) 100%
+    );
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 720px;
+    color: white;
+}
+
+.hero-label {
+    display: inline-block;
+    background: rgba(118, 184, 42, 0.95);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* TEXT / SECTIONS */
+.section-title {
+    color: var(--fnv-blue);
+    font-weight: 700;
+}
+
+.page-header {
+    background-color: white;
+    padding: 50px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.page-header h1 {
+    color: var(--fnv-blue);
+    font-weight: 700;
+}
+
+/* CARDS */
+.fnv-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.fnv-card:hover {
+    transform: translateY(-5px);
+}
+
+.fnv-card h3 {
+    color: var(--fnv-blue);
+}
+
+.card-icon {
+    width: 55px;
+    height: 55px;
+    background: #eef6ff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+/* BUTTONS */
+.btn-fnv {
+    display: inline-block;
+    background-color: var(--fnv-green);
+    color: white;
+    border-radius: 30px;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-fnv:hover {
+    background-color: #5f9823;
+    color: white;
+}
+
+.btn-outline-fnv {
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-outline-fnv:hover {
+    background: white;
+    color: var(--fnv-blue);
+}
+
+/* INFO BLOCK */
+.info-block {
+    background: white;
+}
+
+.info-block h2 {
+    color: var(--fnv-blue);
+    font-weight: 700;
+}
+
+.highlight-card {
+    background: var(--fnv-blue);
+    color: white;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.highlight-card h3 {
+    margin-bottom: 18px;
+}
+
+.highlight-card ul {
+    margin-bottom: 0;
+}
+
+/* FOOTER */
+.fnv-footer {
+    background-color: var(--fnv-dark-blue);
+    color: white;
+}
+
+.fnv-footer h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.fnv-footer p {
+    margin-bottom: 10px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .modern-hero,
+    .hero-overlay {
+        min-height: 520px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .site-logo {
+        width: 36px;
+        height: 36px;
+    }
+}
